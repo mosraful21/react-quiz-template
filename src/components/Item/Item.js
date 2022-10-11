@@ -1,9 +1,9 @@
 import React from 'react';
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
-import './Item.css'
+import { Link } from 'react-router-dom';
 
 const Item = ({ item }) => {
-    const { name, total, logo } = item;
+    const { id, name, total, logo } = item;
     return (
         <div className='border-2 p-2 rounded-lg'>
             <div className='bg-gray-500 rounded-lg'>
@@ -15,7 +15,7 @@ const Item = ({ item }) => {
             </div>
             
             <div className='bg-blue-400 flex items-center justify-center rounded-lg px-24 py-1 font-semibold mt-2'>
-                <button onClick={''}>Start Now</button>
+                <button> <Link to={`${id}`}>Start Now</Link> </button>
                 <ArrowRightIcon className='h-4 w-4 text-black-500 ml-2'></ArrowRightIcon>
             </div>
         </div>
