@@ -1,34 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { CartesianGrid, LineChart, XAxis, YAxis, Tooltip, Legend, Line } from 'recharts';
 
 const Statistics = () => {
-    const data = [
-        {
-            "name": "React",
-            "Total": 10,
-            "Right": 8
-        },
-        {
-            "name": "JavaScript",
-            "Total": 12,
-            "Right": 9
-        },
-        {
-            "name": "CSS",
-            "Total": 5,
-            "Right": 8
-        },
-        {
-            "name": "HTML",
-            "Total": 8,
-            "Right": 6
-        },
-        {
-            "name": "Git",
-            "Total": 15,
-            "Right": 11
-        }
-    ]
+    const data = useLoaderData();
+    
     return (
         <div className=''>
             <LineChart width={730} height={250} data={data}
