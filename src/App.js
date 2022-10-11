@@ -11,12 +11,19 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/', element: <Main></Main>, children: [
-        { path: '/home', element: <Home></Home> },
-        { path: '/topic', element: <Topics></Topics> },
-        { path: '/statistics', element: <Statistics></Statistics> },
-        { path: '/blog', element: <Blog></Blog> }
+        {
+          path: 'home',
+          loader: async () => {
+            return fetch('quiz.json');
+          },
+          element: <Home></Home>
+        },
+        { path: 'topic', element: <Topics></Topics> },
+        { path: 'statistics', element: <Statistics></Statistics> },
+        { path: 'blog', element: <Blog></Blog> }
       ]
     },
+    { path: '*', element: <div>This route not found 404</div> }
   ])
 
   return (
