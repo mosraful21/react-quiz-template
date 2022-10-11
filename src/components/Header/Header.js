@@ -8,8 +8,8 @@ const Header = () => {
             <div className='flex md:justify-between items-center p-5'>
                 <h4 className='ml-12 md:text-4xl font-semibold'>Math Quiz</h4>
                 <nav className='header mr-12'>
-                    <Link to="/home">Home</Link>
-                    <Link to="/topic">Topic</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/topics">Topics</Link>
                     <Link to="/statistics">Statistics</Link>
                     <Link to="/blog">Blog</Link>
                 </nav>
