@@ -14,8 +14,7 @@ const Statistics = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="Right" stroke="#8884d8" />
-                <Line type="monotone" dataKey="Total" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="total" stroke="#8884d8" />
             </LineChart>
         </div>
     );

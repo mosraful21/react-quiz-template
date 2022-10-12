@@ -13,7 +13,7 @@ function App() {
       path: "/", element: <Main></Main>, children:
         [
           { path: '/', loader: () => fetch('quiz.json'), element: <Topics></Topics> },
-          { path: '/statistics', loader: () => fetch('statistics.json'), element: <Statistics></Statistics> },
+          { path: '/statistics', loader: () => fetch('quiz.json'), element: <Statistics></Statistics> },
           { path: '/blog', element: <Blog></Blog> },
 
           {
