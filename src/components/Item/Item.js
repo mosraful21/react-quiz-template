@@ -15,7 +15,7 @@ const Item = ({ item }) => {
             </div>
             
             <div>
-                <Link  className='bg-blue-400 flex items-center justify-center rounded-lg px-24 py-1 font-semibold mt-2' to={`${id}`}>Start Now <ArrowRightIcon className='h-4 w-4 text-black-500 ml-2'></ArrowRightIcon> </Link>
+                <Link  className='bg-blue-400 flex items-center justify-center rounded-lg px-24 py-1 font-semibold mt-2' to={`${id}`}>Start Now <ArrowRightIcon className='h-4 w-4 ml-2'></ArrowRightIcon> </Link>
             </div>
         </div>
     );

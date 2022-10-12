@@ -8,7 +8,7 @@ const Topics = () => {
     return (
         <div>
             <div className='bg-gray-200 p-8'>
-                <h2 className='text-4xl'> This is the simple quiz</h2>
+                <h2 className='text-4xl'> This is the simple quiz of Web Development Topic</h2>
             </div>
             <div className='grid md:grid-cols-4 gap-4 p-12'>
                 {
