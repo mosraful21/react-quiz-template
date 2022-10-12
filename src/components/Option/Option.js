@@ -1,13 +1,14 @@
 import React from 'react';
+import swal from 'sweetalert';
 
 const Option = (option, correctAnswer) => {
 
     const handleOnClick = () => {
         if(option.option === option.correctAnswer){
-            alert("Right Answer");
+            swal("Right Answer");
         }
         else{
-            alert("Wrong Answer!!");
+            swal("Wrong Answer!!");
         }
     }
 
