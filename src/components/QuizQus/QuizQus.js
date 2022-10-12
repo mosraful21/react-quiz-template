@@ -6,9 +6,9 @@ const QuizQus = () => {
     const data = useLoaderData();
     const {name, questions} = data.data;
     return (
-        <div className='border-2 m-3'>
-            <h1 className='text-2xl font-semibold'>Topic Name: {name}</h1>
-            <div className=''>
+        <div className='m-3'>
+            <h1 className='text-2xl font-semibold mb-4'>Topic Name: {name}</h1>
+            <div className='border-2 w-3/5 mx-auto'>
                 {
                     questions.map(qus => <Qus key={qus.id} qus={qus}> </Qus>)
                 }
