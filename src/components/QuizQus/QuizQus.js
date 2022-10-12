@@ -8,7 +8,7 @@ const QuizQus = () => {
     return (
         <div className='m-3'>
             <h1 className='text-2xl font-semibold mb-4'>Topic Name: {name}</h1>
-            <div className='border-2 w-3/5 mx-auto'>
+            <div className='border-2 md:w-4/6 mx-auto'>
                 {
                     questions.map(qus => <Qus key={qus.id} qus={qus}> </Qus>)
                 }

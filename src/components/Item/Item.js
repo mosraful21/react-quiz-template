@@ -14,9 +14,8 @@ const Item = ({ item }) => {
                 <p><small>Total Question: {total}</small></p>
             </div>
             
-            <div className='bg-blue-400 flex items-center justify-center rounded-lg px-24 py-1 font-semibold mt-2'>
-                <button> <Link to={`${id}`}>Start Now</Link> </button>
-                <ArrowRightIcon className='h-4 w-4 text-black-500 ml-2'></ArrowRightIcon>
+            <div>
+                <Link  className='bg-blue-400 flex items-center justify-center rounded-lg px-24 py-1 font-semibold mt-2' to={`${id}`}>Start Now <ArrowRightIcon className='h-4 w-4 text-black-500 ml-2'></ArrowRightIcon> </Link>
             </div>
         </div>
     );
